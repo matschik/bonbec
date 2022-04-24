@@ -1,0 +1,7 @@
+{
+  "name": "bonbec",
+  "version": "0.1.0",
+  "description": "",
+  "bin": "./index.js",
+  "type": "module"
+}
