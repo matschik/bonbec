@@ -26,7 +26,7 @@ const GIST_ID = "0dbcdf970f1cd5f8b16c0a0e3501cfd0";
     console.info(`🎉 Created file: ${path}`);
   } else if (name) {
     const filenamesIncludingName = Object.keys(files).filter((filename) =>
-      filename.includes(name)
+      filename.toLowerCase().includes(name.toLowerCase())
     );
     if (filenamesIncludingName.length > 0) {
       console.info("😔 File not found. Did you mean ?", "\n");
