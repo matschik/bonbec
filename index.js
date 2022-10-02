@@ -5,12 +5,12 @@ import nodePath from "path";
 
 const [name] = process.argv.slice(2);
 
-const GIST_ID = "0dbcdf970f1cd5f8b16c0a0e3501cfd0";
+const GIST_ID = "aaf199c5ecfa445a6c9ac3613ced5dc3";
 
 (async function main() {
   const response = await axios.get(`https://api.github.com/gists/${GIST_ID}`);
   const { files } = response.data;
-  const filenames = Object.keys(files)
+  const filenames = Object.keys(files);
 
   if (!name) {
     logAvailableFiles(filenames);
